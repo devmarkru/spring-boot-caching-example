@@ -1,2 +1,2 @@
-# spring-boot-caching-example
-Spring Boot caching example 
+# Простой пример кеширования на Spring Boot
+Данное приложение иллюстрирует простой споособ кеширования, предлагаемый Spring Boot.
