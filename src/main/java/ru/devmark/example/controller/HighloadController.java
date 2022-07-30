@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.devmark.example.model.Record;
+import ru.devmark.example.model.MyRecord;
 import ru.devmark.example.service.HighloadService;
 
 @RestController
@@ -18,12 +18,12 @@ public class HighloadController {
     }
 
     @GetMapping("/{id}")
-    public Record getOrCreateRecord(@PathVariable int id) {
+    public MyRecord getOrCreateRecord(@PathVariable int id) {
         return highloadService.getOrCreateRecord(id);
     }
 
     @PutMapping("/{id}")
-    public Record createOrUpdateRecord(@PathVariable int id) {
+    public MyRecord createOrUpdateRecord(@PathVariable int id) {
         return highloadService.createOrUpdateRecord(id);
     }
 
