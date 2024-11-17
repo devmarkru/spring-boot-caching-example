@@ -32,4 +32,10 @@ public class HighloadController {
         highloadService.deleteRecord(id);
         return "Record deleted";
     }
+
+    @DeleteMapping
+    public String deleteAllRecords() {
+        highloadService.deleteAllRecords();
+        return "All records deleted";
+    }
 }

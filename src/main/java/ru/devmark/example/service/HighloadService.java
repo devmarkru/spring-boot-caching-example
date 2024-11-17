@@ -33,4 +33,9 @@ public class HighloadService {
     public void deleteRecord(int recordId) {
         // запись будет удалена из кеша
     }
+
+    @CacheEvict(cacheNames = "recordsCache", allEntries = true)
+    public void deleteAllRecords() {
+        // очищаем кеш полностью
+    }
 }
